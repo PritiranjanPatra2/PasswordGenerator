@@ -49,7 +49,7 @@ newpass+=characters[randomIndex];
   // console.log(includeLower);
   function copy(){
     navigator.clipboard.writeText(password);
-    alert(`copied to clipboard:${password}`);
+    alert(`copied to clipboard: ${password}`);
   }
 
   return (
@@ -57,7 +57,7 @@ newpass+=characters[randomIndex];
       <div className="container">
         <h1>Password Generator</h1>
         <div className="passwordbox">
-        <input type="text" value={password} readOnly   /><button onClick={copy}>COPY</button>
+        <input type="text" value={password} readOnly placeholder="Check any of the Check Boxes"  /><button onClick={copy}>COPY</button>
         </div>
         <div className="length">
           <p>Select Password length(**8-50 characters**)</p>
